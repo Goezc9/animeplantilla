@@ -57,7 +57,7 @@ a {
     background-color: #303f9f; 
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10; /* Asegura que esté encima de todo */
+    z-index: 10;
     top: 100%;
     left: 0;
 }
@@ -88,14 +88,13 @@ a {
 }
 
 .btn-register {
-    background-color: #ff5722; /* Color de acento (rojo/naranja) */
+    background-color: #ff5722;
     border: 1px solid #ff5722;
     font-weight: bold;
 }
 
 /* 2. SECCIÓN PRINCIPAL DE HÉROE (HERO) */
 .hero-section {
-    /* *** IMAGEN DE FONDO DE ANIME EN LÍNEA *** */
     background: url('https://i.ibb.co/hK04t0V/hero-anime-bg.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
@@ -106,7 +105,7 @@ a {
     padding-left: 5%;
 }
 
-/* Degradado oscuro para mejorar la legibilidad del texto */
+/* Degradado oscuro */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -177,8 +176,6 @@ a {
     transition: transform 0.3s;
 }
 
-
-
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -197,7 +194,7 @@ a {
     color: #3f51b5;
 }
 
-/* 4. SECCIÓN DE SERVICIOS / BENEFICIOS PRINCIPALES */
+/* 4. SECCIÓN DE SERVICIOS */
 .superior-services {
     text-align: center;
     padding: 80px 5% 50px;
@@ -241,19 +238,29 @@ a {
     margin-bottom: 10px;
 }
 
-.btn-view-more {
-    background-color: #3f51b5;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* BOTÓN "VER MÁS" */
+.ver-mas-container {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.btn-view-more:hover {
+.btn-ver-mas {
+    display: inline-block;
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-ver-mas:hover {
     background-color: #303f9f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 /* 5. PIE DE PÁGINA (FOOTER) */
