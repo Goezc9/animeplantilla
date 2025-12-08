@@ -177,11 +177,6 @@ a {
     transition: transform 0.3s;
 }
 
-.icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 10px;
-}
 
 
 .product-card:hover {
@@ -226,6 +221,12 @@ a {
     justify-content: space-around;
     margin-bottom: 40px;
     flex-wrap: wrap;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
 }
 
 .service-item {
